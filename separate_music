@@ -1,0 +1,10 @@
+!apt install ffmpeg
+
+pip install spleeter
+
+pip install youtube-dl
+
+
+!youtube-dl --id -x --audio-format mp3 https://www.youtube.com/watch?v=F3cXxqgbx9Y
+
+!spleeter separate -i F3cXxqgbx9Y.mp3 -o output/
