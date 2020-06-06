@@ -1,6 +1,8 @@
+'''
 本工具只知道在colab上是可以運行的。
 
 請先載完下面三個所需的工具包
+'''
 
 !apt install ffmpeg
 
@@ -9,12 +11,14 @@ pip install spleeter
 pip install youtube-dl
 
 
-在mp3後貼上yt的網址(不支援撥放清單的影片)
+# 在mp3後貼上yt的網址(不支援撥放清單的影片)
 !youtube-dl --id -x --audio-format mp3 https://www.youtube.com/watch?v=F3cXxqgbx9Y
 
-將前面 [ffmpeg] Destination 後面的名稱+檔案名貼到 -i 和 -o 中間
+#將前面 [ffmpeg] Destination 後面的名稱+檔案名貼到 -i 和 -o 中間
 !spleeter separate -i F3cXxqgbx9Y.mp3 -o output/
 
 
+'''
 打開左邊的files *** 如果不行的話，請在右上角的editing的左邊做reconnecting
 打開"output"資料夾，在點選檔案右邊的三小點就會看到下載的選項
+'''
