@@ -18,4 +18,4 @@ pip install youtube-dl
 
 
 # 打開左邊的files。如果不行的話，請在右上角的editing的左邊做reconnecting
-# 打開"output"資料夾，在點選檔案右邊的三小點就會看到下載的選項
+# 打開"output"資料夾，在檔案右邊有三小點，點下去就會看到下載的選項
